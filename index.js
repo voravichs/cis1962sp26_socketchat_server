@@ -9,7 +9,7 @@ const PORT = 3000;
 
 // Multi-user chat server
 const io = new Server(server, {
-  cors: { origin: "https://cis1962sp26-socketchat-client.vercel.app/", methods: ["GET", "POST"] },
+  cors: { origin: "*", methods: ["GET", "POST"] },
 });
 
 // Track online users per room
